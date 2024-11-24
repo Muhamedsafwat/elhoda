@@ -4,7 +4,7 @@ import Link from "next/link";
 // import images
 import logo from "public/vectors/elHodaLogo 4.svg";
 //import icons
-import { Home, Info, ClipboardPlus, Phone } from "lucide-react";
+import { Home, Info, Phone } from "lucide-react";
 
 const navItems = [
   {
@@ -15,11 +15,6 @@ const navItems = [
   {
     label: "من نحن",
     icon: <Info />,
-    href: "/about-us",
-  },
-  {
-    label: "الأقسام",
-    icon: <ClipboardPlus />,
     href: "/about-us",
   },
   {

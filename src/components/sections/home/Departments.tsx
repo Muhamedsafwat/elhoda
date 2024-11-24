@@ -4,13 +4,49 @@ import Image from "next/image";
 //import images
 import bg from "public/backgrounds/departmentsBG.svg";
 import icon1 from "public/vectors/specalities/icon1.png";
+import icon2 from "public/vectors/specalities/icon2.png";
+import icon3 from "public/vectors/specalities/icon3.png";
+import icon4 from "public/vectors/specalities/icon4.png";
+import icon5 from "public/vectors/specalities/icon5.png";
+import icon6 from "public/vectors/specalities/icon6.png";
 
 const Departments = async () => {
   const departments = [
     {
       icon: icon1,
       title: "جراحة العظام",
-      description: "",
+      description:
+        "آلام العظام وخشونة المفاصل. إصابات الملاعب. معالجة التهابات الأعصاب والشلل. وحدة خاصة لتفتيت الدهون. تأهيل ما بعد عمليات الركبة والكتف.",
+    },
+    {
+      icon: icon2,
+      title: "المخ والاعصاب",
+      description:
+        "آلام العظام وخشونة المفاصل. إصابات الملاعب. معالجة التهابات الأعصاب والشلل. وحدة خاصة لتفتيت الدهون. تأهيل ما بعد عمليات الركبة والكتف.",
+    },
+    {
+      icon: icon3,
+      title: "الجهاز الهضمي",
+      description:
+        "آلام العظام وخشونة المفاصل. إصابات الملاعب. معالجة التهابات الأعصاب والشلل. وحدة خاصة لتفتيت الدهون. تأهيل ما بعد عمليات الركبة والكتف.",
+    },
+    {
+      icon: icon4,
+      title: " الاشعة والتحاليل",
+      description:
+        "آلام العظام وخشونة المفاصل. إصابات الملاعب. معالجة التهابات الأعصاب والشلل. وحدة خاصة لتفتيت الدهون. تأهيل ما بعد عمليات الركبة والكتف.",
+    },
+    {
+      icon: icon5,
+      title: " الطوارئ",
+      description:
+        "آلام العظام وخشونة المفاصل. إصابات الملاعب. معالجة التهابات الأعصاب والشلل. وحدة خاصة لتفتيت الدهون. تأهيل ما بعد عمليات الركبة والكتف.",
+    },
+    {
+      icon: icon6,
+      title: "العلاج الطبيعي",
+      description:
+        "آلام العظام وخشونة المفاصل. إصابات الملاعب. معالجة التهابات الأعصاب والشلل. وحدة خاصة لتفتيت الدهون. تأهيل ما بعد عمليات الركبة والكتف.",
     },
   ];
 
