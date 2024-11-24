@@ -12,7 +12,10 @@ const Layout = ({ children }: LayoutProps) => {
     <html>
       <head>
         <title>El Hoda Group</title>
-        <meta name="description" content="Description goes here" />
+        <meta
+          name="description"
+          content="الهدي جروب للخدمات الطبية والعلاج الطبيعي تقدم رعاية صحية شاملة وعلاج طبيعي متميز، عبر فريق متخصص من الأطباء والمعالجين."
+        />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
