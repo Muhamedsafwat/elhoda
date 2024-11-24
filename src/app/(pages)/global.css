@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .container {
+    @apply max-w-screen-xl px-5 lg:px-16 mx-auto;
+  }
+  .gradient-r {
+    @apply bg-gradient-to-r from-primary-dark to-primary-light;
+  }
+  .gradient-l {
+    @apply bg-gradient-to-l from-primary-dark to-primary-light;
+  }
+  .text-gradient {
+    @apply w-fit bg-gradient-to-br from-primary-dark to-primary-light text-transparent bg-clip-text;
+  }
+  .btn-solid {
+    @apply rounded border border-primary-dark bg-primary-dark px-4 py-2 text-center font-medium text-white duration-200 hover:bg-transparent hover:text-primary-dark;
+  }
+  .btn-outline {
+    @apply rounded text-primary-dark border border-primary-dark bg-transparent px-4 py-2 text-center font-medium duration-200 hover:bg-primary-dark hover:text-white;
+  }
+  .form-border {
+    @apply rounded-lg p-3 flex-1 text-gray-400 border-2 border-primary-light active:border-primary-dark duration-200;
+  }
+  .form-icon {
+    @apply absolute right-3 top-[60%] transform -translate-y-2/3 text-gray-500 z-10;
+  }
+}
+
+body {
+  font-family: "Almarai", sans-serif;
+  color: #333;
+  background-color: #cfd5da;
+}
