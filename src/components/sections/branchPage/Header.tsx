@@ -20,12 +20,12 @@ const Header = ({
         />
       </div>
       {/*logo*/}
-      <div className="mx-auto aspect-square rounded-full overflow-hidden w-60 md:w-72 relative top-[-50%] translate-y-[-50%] bg-white shadow-xl p-5 flex items-center justify-center">
+      <div className="mx-auto aspect-square hover:translate-y-[-52%] hover:shadow-2xl duration-200 rounded-full overflow-hidden w-60 md:w-72 relative top-[-50%] translate-y-[-50%] bg-white shadow-xl p-5 flex items-center justify-center">
         <Image
           src={logoUrl}
           fill
           alt="logo"
-          className="object-contain w-[80%] h-[80%]"
+          className="object-contain scale-[1.3]"
         />
       </div>
     </section>

@@ -24,7 +24,13 @@ const Contact = ({ logo }: { logo: StaticImageData }) => {
           </a>
         </div>
         <div className="rounded-full overflow-hidden bg-white aspect-square flex items-center justify-center">
-          <Image src={logo} alt="logo" width={200} height={200} />
+          <Image
+            src={logo}
+            alt="logo"
+            width={200}
+            height={200}
+            className="scale-[1.3]"
+          />
         </div>
       </div>
     </section>

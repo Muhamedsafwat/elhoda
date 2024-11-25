@@ -3,9 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 //import images
-import logo1 from "public/home/logo1.png";
-import logo2 from "public/home/logo2.png";
-import logo3 from "public/home/logo3.png";
+import logo1 from "public/home/elhodacenter.png";
+import logo2 from "public/home/konoz.png";
+import logo3 from "public/home/nawah.png";
 
 const Branches = async () => {
   const branchesData = [
@@ -35,7 +35,7 @@ const Branches = async () => {
         {branchesData.map((item, index) => (
           <div
             key={index}
-            className="rounded-full overflow-hidden p-5 bg-white"
+            className="rounded-full overflow-hidden p-5 bg-white shadow-xl hover:shadow-2xl group hover:scale-105 duration-200"
           >
             <Link href={`/${item.slug}`}>
               <Image
@@ -44,7 +44,7 @@ const Branches = async () => {
                 height={200}
                 alt="logo"
                 src={item.logo}
-                className="grayscale hover:grayscale-0 duration-200 cursor-pointer aspect-square"
+                className="grayscale group-hover:grayscale-0 duration-200 cursor-pointer aspect-square scale-[1.4]"
               />
             </Link>
           </div>

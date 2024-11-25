@@ -3,7 +3,7 @@ import React from "react";
 import Container from "@/components/sections/branchPage/Container";
 
 import cover from "public/test/branchcover.png";
-import logo from "public/home/logo2.png";
+import logo from "public/home/konoz.png";
 import icon from "public/vectors/specalities/icon1.png";
 
 const page = async () => {
