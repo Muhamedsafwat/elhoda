@@ -5,7 +5,7 @@ import contactImg from "public/home/contact.png";
 //import icons
 import { PhoneCall } from "lucide-react";
 const Contact = async () => {
-  const phoneNumbers = ["01016596908"];
+  const phoneNumbers = ["01060055753", "0552356780"];
 
   return (
     <section className="relative w-screen h-96 md:h-[500px] shadow-2xl">
@@ -14,17 +14,18 @@ const Contact = async () => {
         <PhoneCall className="size-10 md:size-16" />
         <h2 className=" text-3xl md:text-4xl font-bold">ابق علي تواصل معنا</h2>
         <div className="w-full h-[2px] bg-white" />
-        <p>خدمة العملاء</p>
-        {phoneNumbers?.length ? (
-          <a
-            href={`tel:${phoneNumbers[0]}`}
-            className="hover:text-primary-light duration-200"
-          >
-            {phoneNumbers[0]}
-          </a>
-        ) : (
-          <></>
-        )}
+        <p>الادارة وخدمة العملاء</p>
+        <div className="flex items-center">
+          {phoneNumbers?.map((item, index) => (
+            <a
+              key={index}
+              href={`tel:${item}`}
+              className="hover:text-primary-light duration-200 first:border-l-2 border-solid border-l-primary-light px-5"
+            >
+              {item}
+            </a>
+          ))}
+        </div>
       </div>
     </section>
   );

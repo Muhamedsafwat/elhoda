@@ -3,18 +3,18 @@ import Image from "next/image";
 import Link from "next/link";
 
 //import images
-import logo1 from "public/home/elhodacenter.png";
-import logo2 from "public/home/konoz.png";
-import logo3 from "public/home/nawah.png";
+import logo1 from "public/home/logo1.png";
+import logo2 from "public/home/logo2.png";
+import logo3 from "public/home/logo3.png";
 
 const Branches = async () => {
   const branchesData = [
     {
-      logo: logo1,
+      logo: logo2,
       slug: "al-hoda-center",
     },
     {
-      logo: logo2,
+      logo: logo1,
       slug: "konoz-elhoda",
     },
     {
@@ -33,18 +33,15 @@ const Branches = async () => {
       {/*logos*/}
       <div className="flex justify-between my-16">
         {branchesData.map((item, index) => (
-          <div
-            key={index}
-            className="rounded-full overflow-hidden p-5 bg-white shadow-xl hover:shadow-2xl group hover:scale-105 duration-200"
-          >
+          <div key={index} className="rounded-full overflow-hidden bg-white">
             <Link href={`/${item.slug}`}>
               <Image
                 key={index}
-                width={200}
-                height={200}
+                width={230}
+                height={230}
                 alt="logo"
                 src={item.logo}
-                className="grayscale group-hover:grayscale-0 duration-200 cursor-pointer aspect-square scale-[1.4]"
+                className="grayscale  hover:grayscale-0 duration-200 cursor-pointer aspect-square"
               />
             </Link>
           </div>

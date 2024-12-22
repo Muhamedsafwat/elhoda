@@ -4,54 +4,46 @@ import Image from "next/image";
 //import images
 import bg from "public/backgrounds/departmentsBG.svg";
 import icon1 from "public/vectors/specalities/icon1.png";
-import icon2 from "public/vectors/specalities/icon2.png";
-import icon3 from "public/vectors/specalities/icon3.png";
-import icon4 from "public/vectors/specalities/icon4.png";
-import icon5 from "public/vectors/specalities/icon5.png";
-import icon6 from "public/vectors/specalities/icon6.png";
 
 const Departments = async () => {
   const departments = [
     {
       icon: icon1,
       title: "جراحة العظام",
-      description:
-        "آلام العظام وخشونة المفاصل. إصابات الملاعب. معالجة التهابات الأعصاب والشلل. وحدة خاصة لتفتيت الدهون. تأهيل ما بعد عمليات الركبة والكتف.",
+      description: "",
     },
     {
-      icon: icon2,
-      title: "المخ والاعصاب",
-      description:
-        "آلام العظام وخشونة المفاصل. إصابات الملاعب. معالجة التهابات الأعصاب والشلل. وحدة خاصة لتفتيت الدهون. تأهيل ما بعد عمليات الركبة والكتف.",
+      icon: icon1,
+      title: "جراحة العظام",
+      description: "",
     },
     {
-      icon: icon3,
-      title: "الجهاز الهضمي",
-      description:
-        "آلام العظام وخشونة المفاصل. إصابات الملاعب. معالجة التهابات الأعصاب والشلل. وحدة خاصة لتفتيت الدهون. تأهيل ما بعد عمليات الركبة والكتف.",
+      icon: icon1,
+      title: "جراحة العظام",
+      description: "",
     },
     {
-      icon: icon4,
-      title: " الاشعة والتحاليل",
-      description:
-        "آلام العظام وخشونة المفاصل. إصابات الملاعب. معالجة التهابات الأعصاب والشلل. وحدة خاصة لتفتيت الدهون. تأهيل ما بعد عمليات الركبة والكتف.",
+      icon: icon1,
+      title: "جراحة العظام",
+      description: "",
     },
     {
-      icon: icon5,
-      title: " الطوارئ",
-      description:
-        "آلام العظام وخشونة المفاصل. إصابات الملاعب. معالجة التهابات الأعصاب والشلل. وحدة خاصة لتفتيت الدهون. تأهيل ما بعد عمليات الركبة والكتف.",
+      icon: icon1,
+      title: "جراحة العظام",
+      description: "",
     },
     {
-      icon: icon6,
-      title: "العلاج الطبيعي",
-      description:
-        "آلام العظام وخشونة المفاصل. إصابات الملاعب. معالجة التهابات الأعصاب والشلل. وحدة خاصة لتفتيت الدهون. تأهيل ما بعد عمليات الركبة والكتف.",
+      icon: icon1,
+      title: "جراحة العظام",
+      description: "",
     },
   ];
 
   return (
-    <section className="relative w-full  gradient-r my-16 md:my-24 shadow-2xl  ">
+    <section
+      className="relative w-full gradient-r mb-16 md:mb-24 shadow-2xl  "
+      id="departments"
+    >
       <Image src={bg} fill alt="bg-texture" className="object-cover" />
       <div className="container py-16 relative">
         <h2 className="text-center font-medium text-white text-5xl">الأقسام</h2>

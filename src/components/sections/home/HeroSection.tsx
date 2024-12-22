@@ -6,10 +6,11 @@ import { Phone } from "lucide-react";
 //components
 import RevealAnimation from "@/components/RevealAnimation.jsx";
 import hero from "public/home/hero.png";
+import Link from "next/link";
 
 const Hero = async () => {
   const heroData = {
-    title: "الهدي جروب",
+    title: "مجموعة الهدي الطبية",
     description:
       "الهدي جروب للخدمات الطبية والعلاج الطبيعي تقدم رعاية صحية شاملة وعلاج طبيعي متميز، عبر فريق متخصص من الأطباء والمعالجين. توفر خدمات علاجية متنوعة تشمل إعادة التأهيل والعلاج العضلي والمفصلي، مع التركيز على تلبية احتياجات المرضى بطرق مبتكرة وفعّالة لضمان راحتهم ورضاهم.",
     image: hero,
@@ -28,9 +29,14 @@ const Hero = async () => {
         </RevealAnimation>
         <RevealAnimation fromY={50}>
           <div className="flex items-center gap-5 mt-5">
-            <button className="btn-solid flex items-center gap-2">
-              <p>تواصل معنا</p>
-              <Phone />
+            <button>
+              <Link
+                href="/contact"
+                className="btn-solid flex items-center gap-2"
+              >
+                <p>تواصل معنا</p>
+                <Phone />
+              </Link>
             </button>
           </div>
         </RevealAnimation>

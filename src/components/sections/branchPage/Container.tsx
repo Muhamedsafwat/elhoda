@@ -16,6 +16,7 @@ interface BranchData {
   title: string;
   description: string;
   adresses: string[];
+  contact: string[];
 }
 
 interface Props {
@@ -32,7 +33,7 @@ const Container = async ({ branchData }: Props) => {
       />
       <Specialities specalities={branchData.specialities} />
       <Addresses addresses={branchData.adresses || []} />
-      <Contact logo={branchData.logo} />
+      <Contact logo={branchData.logo} numbers={branchData.contact} />
     </>
   );
 };

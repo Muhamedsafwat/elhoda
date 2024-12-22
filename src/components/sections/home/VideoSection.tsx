@@ -12,31 +12,33 @@ const Video = async () => {
   };
 
   return (
-    <section className="container flex flex-col md:flex-row items-center my-16 md:my-24 justify-between gap-16">
-      <div className="md:w-1/2">
-        <RevealAnimation fromY={-50}>
-          <h2 className="text-3xl font-bold text-primary-dark mb-5">
-            نظرة عن المركز
-          </h2>
-        </RevealAnimation>
-        <RevealAnimation fromY={50}>
-          <p>{data.description}</p>
-        </RevealAnimation>
-      </div>
-      <div className="md:w-1/2 w-full h-96">
-        <RevealAnimation fromX={-50}>
-          <iframe
-            className="w-full h-96 rounded-lg shadow-2xl"
-            src={data.YouTubeLink}
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerPolicy="strict-origin-when-cross-origin"
-            allowFullScreen
-          ></iframe>
-        </RevealAnimation>
-      </div>
-    </section>
+    <div className="bg-white py-5">
+      <section className="container flex flex-col md:flex-row items-center md:my-24 justify-between gap-16">
+        <div className="md:w-1/2">
+          <RevealAnimation fromY={-50}>
+            <h2 className="text-3xl font-bold text-primary-dark mb-5">
+              نظرة عن المركز
+            </h2>
+          </RevealAnimation>
+          <RevealAnimation fromY={50}>
+            <p>{data.description}</p>
+          </RevealAnimation>
+        </div>
+        <div className="md:w-1/2 w-full h-96">
+          <RevealAnimation fromX={-50}>
+            <iframe
+              className="w-full h-96 rounded-lg shadow-2xl"
+              src={data.YouTubeLink}
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            ></iframe>
+          </RevealAnimation>
+        </div>
+      </section>
+    </div>
   );
 };
 

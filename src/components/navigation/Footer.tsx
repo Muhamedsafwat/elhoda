@@ -5,6 +5,7 @@ import { Facebook, Instagram, Mail, X } from "lucide-react";
 import Socialmedia from "../media/Socialmedia";
 import Logo from "../Logo/Logo";
 import elHodaLogo from "public/vectors/elHodaLogo 4.svg";
+import Link from "next/link";
 export const socialmediaIcons = [
   {
     name: "Facebook",
@@ -78,11 +79,14 @@ const Footer = () => {
             <div className="hidden md:flex flex-row md:w-full justify-between md:pt-0 pt-5 px-5">
               <div className="flex flex-col md:pr-24 md:justify-center md:w-fit text-2xl">
                 <div className="text-xl md:text-2xl">الروابط المهمه</div>
-                <div className="text-lg cursor-pointer md:w-fit pt-5 ">
-                  <div className="pb-2">الفروع</div>
-                  <div className="pb-2">الاقسام</div>
-                  <div className="pb-2">من نحن</div>
-                  <div>الرئيسيه</div>
+                <div className="text-lg flex flex-col  items-start md:w-fit pt-5 ">
+                  <Link href="/" className="pb-2">
+                    الرئيسية
+                  </Link>
+                  <Link href="/about-us" className="pb-2">
+                    من نحن
+                  </Link>
+                  <Link href="/contact">تواصل معنا</Link>
                 </div>
               </div>
 
